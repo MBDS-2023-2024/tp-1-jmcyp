@@ -5,7 +5,7 @@ data class Student {
     val name: String,
     val code: String,
     val sexe: String,
-    val address: Char,
+    val address: String,
     val age: Int
 
 }
