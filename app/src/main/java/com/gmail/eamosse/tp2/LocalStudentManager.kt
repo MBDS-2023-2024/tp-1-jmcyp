@@ -20,3 +20,11 @@ class LocalStudentManager : StudentManager {
     )
 
 }
+
+    fun listOf10(): List<Student>{
+        return etudiants
+    }
+
+
+
+
