@@ -23,8 +23,12 @@ class LocalStudentManager : StudentManager {
         return this.etudiants
     }
 
-    override fun sortAgeAscDesc(type: String): List<Student> {
-        TODO("Not yet implemented")
+    override fun sortAgeAscDesc(type: String) : List<Student> {
+        return when (type.lowercase()) {
+            "asc" -> etudiants.sortedBy { it.age }
+            "desc" -> etudiants.sortedByDescending { it.age }
+            else -> etudiants
+        }
     }
 
     override fun groupBySex(): Map<String, List<Student>> {
