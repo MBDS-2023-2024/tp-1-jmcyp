@@ -4,7 +4,7 @@ package com.gmail.eamosse.tp2
 class LocalStudentManager : StudentManager {
 // TODO 1. Implement all methods so that the class is conformed to the interface
     // TODO 2: init the class with a list of 10 students every time a new instance is created;
-    // Use the followi
+    // Use the following
 
     /**
      * listOf(
