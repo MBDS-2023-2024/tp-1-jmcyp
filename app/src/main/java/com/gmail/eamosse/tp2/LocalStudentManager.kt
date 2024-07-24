@@ -49,7 +49,8 @@ class LocalStudentManager : StudentManager {
     }
 
     override fun deleteBySex(sex: String) {
-        TODO("Not yet implemented")
+
+        etudiants.removeAll { it.sexe == sex }
     }
 
     override fun reverse(): List<Student> {
