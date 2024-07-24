@@ -32,8 +32,8 @@ class LocalStudentManager : StudentManager {
     }
 
     override fun groupBySex(): Map<String, List<Student>> {
-        val etudiantsGroupesParSexe = etudiants.groupBy { it.sexe }
-        return etudiantsGroupesParSexe
+        return  etudiants.groupBy { it.sexe }
+
     }
 
     override fun boysOrGirls(sexe: String): List<Student> {
@@ -58,7 +58,7 @@ class LocalStudentManager : StudentManager {
     }
 
     override fun clear() {
-        TODO("Not yet implemented")
+        etudiants.clear()
     }
 
 }
